@@ -1,0 +1,32 @@
+# ===== Environment files with real secrets - NEVER commit these =====
+.env
+.env.local
+.env.*.local
+application-local.properties
+application-secrets.properties
+
+# ===== Backend: Java / Maven =====
+backend/target/
+backend/.mvn/
+backend/*.class
+backend/*.log
+backend/HELP.md
+
+# ===== Frontend: Angular / Node =====
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/npm-debug.log
+frontend/*.log
+
+# ===== IDE / OS =====
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# ===== Seed data with hashed passwords (optional - see note in README) =====
+# Uncomment the next line if you don't want your seed script (with bcrypt
+# hashes tied to known demo passwords) in a public repo:
+# seed-data.sql
